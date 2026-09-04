@@ -32,6 +32,11 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 768, 1024, 1280, 1536],
     imageSizes: [16, 32, 48, 64, 96, 128, 256],
   },
+  experimental: {
+    serverActions: {
+      allowedOrigins: ['lasertech-demo.pages.dev', 'localhost:3000'],
+    },
+  },
 };
 
 export default nextConfig;

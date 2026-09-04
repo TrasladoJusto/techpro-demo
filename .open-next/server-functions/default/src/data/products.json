@@ -1,0 +1,127 @@
+[
+  {
+    "id": "precision-3w",
+    "name": "Precision 3W",
+    "brand": "Apex Laser",
+    "category": "diodo",
+    "applications": ["endodoncia", "periodoncia", "cirugia"],
+    "priceReference": "Consultar",
+    "shortDescription": "Láser de tres longitudes de onda para cirugía, endodoncia y periodoncia.",
+    "description": "El Precision 3W es un equipo láser odontológico de alta precisión que integra tres longitudes de onda en un solo dispositivo. Diseñado para clínicas que necesitan versatilidad clínica sin sacrificar espacio ni rendimiento.",
+    "specs": {
+      "longitudDeOnda": "810 nm / 980 nm / 1450 nm",
+      "potencia": "Hasta 15 W",
+      "tamanoDelSpot": "200 μm a 500 μm",
+      "peso": "4.5 kg",
+      "dimensiones": "26 × 22 × 14 cm"
+    },
+    "features": [
+      "Tres longitudes de onda intercambiables",
+      "Interfaz táctil intuitiva",
+      "Garantía de fábrica incluida",
+      "Capacitación clínica incluida en la entrega"
+    ],
+    "isFeatured": true,
+    "image": "/images/product-wiser-3.jpg"
+  },
+  {
+    "id": "simpler-980",
+    "name": "SIMPLER 980",
+    "brand": "Apex Laser",
+    "category": "diodo",
+    "applications": ["cirugia", "periodoncia"],
+    "priceReference": "Consultar",
+    "shortDescription": "Láser de diodo de 980 nm pensado para cirugía de tejidos blandos.",
+    "description": "El SIMPLER 980 es un láser de diodo especializado para cirugía de tejidos blandos y procedimientos periodontales. Ergonomía, fiabilidad y un coste ajustado para odontólogos que inician su camino en láser.",
+    "specs": {
+      "longitudDeOnda": "980 nm",
+      "potencia": "Hasta 10 W",
+      "tamanoDelSpot": "300 μm",
+      "peso": "3.2 kg",
+      "dimensiones": "22 × 18 × 12 cm"
+    },
+    "features": [
+      "Una longitud de onda de alta eficiencia",
+      "Diseño compacto y portátil",
+      "Curva de aprendizaje corta",
+      "Soporte técnico LaserTech"
+    ],
+    "isFeatured": true,
+    "image": "/images/product-simpler.jpg"
+  },
+  {
+    "id": "biostim-635",
+    "name": "BioStim 635",
+    "brand": "Vitalase",
+    "category": "terapia",
+    "applications": ["biostimulacion", "postoperatorio"],
+    "priceReference": "Consultar",
+    "shortDescription": "Láser de baja potencia para bioestimulación y manejo del dolor postoperatorio.",
+    "description": "BioStim 635 es un láser de baja intensidad especializado en fotobiomodulación. Acelera la cicatrización, reduce el dolor postoperatorio y se convierte en un complemento terapéutico para cualquier consultorio.",
+    "specs": {
+      "longitudDeOnda": "635 nm",
+      "potencia": "500 mW",
+      "tamanoDelSpot": "8 mm",
+      "peso": "1.4 kg",
+      "dimensiones": "18 × 12 × 8 cm"
+    },
+    "features": [
+      "Bioestimulación celular",
+      "Manejo del dolor agudo",
+      "Aceleración de la cicatrización",
+      "Sin consumibles permanentes"
+    ],
+    "isFeatured": false,
+    "image": "/images/product-dentalase.jpg"
+  },
+  {
+    "id": "dual-pro",
+    "name": "Dual Pro",
+    "brand": "Vitalase",
+    "category": "diodo",
+    "applications": ["blanqueamiento", "cirugia"],
+    "priceReference": "Consultar",
+    "shortDescription": "Láser de diodo para blanqueamiento dental clínico y cirugía menor.",
+    "description": "Dual Pro combina una longitud de onda optimizada para fotoactivación de geles de blanqueamiento con potencia suficiente para cirugía menor. Dos indicaciones clínicas en un solo equipo.",
+    "specs": {
+      "longitudDeOnda": "810 nm",
+      "potencia": "Hasta 7 W",
+      "tamanoDelSpot": "8 mm (blanqueamiento) · 400 μm (cirugía)",
+      "peso": "2.6 kg",
+      "dimensiones": "20 × 16 × 11 cm"
+    },
+    "features": [
+      "Doble uso clínico",
+      "Protocolos preinstalados",
+      "Manejo intuitivo",
+      "Servicio técnico LaserTech"
+    ],
+    "isFeatured": true,
+    "image": "/images/product-quicklase.jpg"
+  },
+  {
+    "id": "duo-810-980",
+    "name": "Duo 810/980",
+    "brand": "Apex Laser",
+    "category": "diodo",
+    "applications": ["endodoncia", "periodoncia"],
+    "priceReference": "Consultar",
+    "shortDescription": "Láser de dos longitudes de onda para endodoncia y periodoncia conservadora.",
+    "description": "Duo 810/980 combina dos longitudes de onda clave para procedimientos endodónticos y periodontales. Pensado para clínicas que buscan precisión clínica en desinfección y modulación tisular.",
+    "specs": {
+      "longitudDeOnda": "810 nm / 980 nm",
+      "potencia": "Hasta 8 W",
+      "tamanoDelSpot": "200 μm",
+      "peso": "3.5 kg",
+      "dimensiones": "23 × 19 × 13 cm"
+    },
+    "features": [
+      "Dos longitudes de onda complementarias",
+      "Protocolos clínicos validados",
+      "Capacitación clínica incluida",
+      "Garantía oficial LaserTech"
+    ],
+    "isFeatured": false,
+    "image": "/images/product-dr-smile.jpg"
+  }
+]

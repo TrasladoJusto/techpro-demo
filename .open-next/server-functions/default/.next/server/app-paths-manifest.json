@@ -1,0 +1,19 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/contact/route": "app/api/contact/route.js",
+  "/api/support/route": "app/api/support/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/page": "app/page.js",
+  "/contacto/page": "app/contacto/page.js",
+  "/capacitaciones/page": "app/capacitaciones/page.js",
+  "/nosotros/page": "app/nosotros/page.js",
+  "/equipos/page": "app/equipos/page.js",
+  "/privacidad/page": "app/privacidad/page.js",
+  "/equipos/[slug]/page": "app/equipos/[slug]/page.js",
+  "/terminos/page": "app/terminos/page.js",
+  "/servicio-tecnico/page": "app/servicio-tecnico/page.js",
+  "/thanks/page": "app/thanks/page.js",
+  "/testimonios/page": "app/testimonios/page.js"
+}
