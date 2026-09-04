@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Endovita mark">
+  <title>Endovita mark</title>
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#00A9E0" stroke-width="5"/>
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#00A9E0" stroke-width="2"/>
+  <path d="M 38 82 A 72 72 0 0 1 70 49" fill="none" stroke="#9CA3AF" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="100" cy="96" r="46" fill="#0B1620"/>
+  <defs>
+    <radialGradient id="markGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7FE3FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0B1620" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="96" r="32" fill="url(#markGlow)"/>
+  <rect x="60" y="95" width="80" height="2" fill="#7FE3FF" opacity="0.95"/>
+  <rect x="98" y="58" width="2" height="76" fill="#7FE3FF" opacity="0.95"/>
+  <g transform="rotate(45 100 96)">
+    <rect x="60" y="95" width="80" height="1.5" fill="#7FE3FF" opacity="0.7"/>
+  </g>
+  <g transform="rotate(-45 100 96)">
+    <rect x="60" y="96" width="80" height="1.5" fill="#7FE3FF" opacity="0.7"/>
+  </g>
+  <circle cx="100" cy="96" r="4" fill="#FFFFFF"/>
+</svg>

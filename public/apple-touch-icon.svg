@@ -1,0 +1,10 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a2540"/>
+      <stop offset="100%" style="stop-color:#1e5a96"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="36" fill="url(#bg)"/>
+  <text x="90" y="115" font-family="Georgia, serif" font-size="48" font-weight="300" fill="#fafbfc" text-anchor="middle" letter-spacing="-0.02em">LT</text>
+</svg>

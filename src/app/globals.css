@@ -1,0 +1,425 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   ENDOVITA TECHNOLOGY — CLINICAL AUTHORITY 2.0
+   Exact tokens from Stitch design system.
+   ========================================================================== */
+
+@theme {
+  /* ---- Core Palette (Stitch exact) ---- */
+  --color-canvas: #fafbfc;
+  --color-cream: #f8f5f0;
+  --color-paper: #ffffff;
+  --color-navy: #0a2540;
+  --color-navy-soft: #1a3556;
+  --color-muted: #5a6373;
+  --color-subtle: #8c95a4;
+  --color-brass: #d4a574;
+  --color-blue: #1e5a96;
+  --color-rule: rgba(10, 37, 64, 0.10);
+  --color-rule-strong: rgba(10, 37, 64, 0.18);
+
+  /* Semantic aliases (Stitch brand.* namespace) */
+  --color-brand-navy: #0a2540;
+  --color-brand-gold: #d4a574;
+  --color-brand-blue: #1e5a96;
+  --color-brand-cream: #f8f5f0;
+  --color-brand-offwhite: #fafbfc;
+  --color-ink: var(--color-navy);
+  --color-ink-muted: var(--color-muted);
+  --color-ink-subtle: var(--color-subtle);
+  --color-accent: var(--color-blue);
+  --color-primary: var(--color-navy);
+  --color-on-primary: var(--color-paper);
+  --color-surface: var(--color-paper);
+  --color-surface-container: var(--color-canvas);
+  --color-surface-container-low: var(--color-cream);
+  --color-outline: var(--color-subtle);
+  --color-outline-variant: var(--color-rule-strong);
+  --color-danger: #b91c1c;
+  --color-success: #15803d;
+  --color-border: var(--color-rule-strong);
+
+  /* ---- Typography (Stitch exact) ---- */
+  --font-display: var(--font-serif), "Times New Roman", serif;
+  --font-body: var(--font-geist-sans), "Helvetica Neue", system-ui, sans-serif;
+  --font-label: var(--font-geist-mono), "SF Mono", ui-monospace, monospace;
+  --font-sans: var(--font-body);
+
+  /* ---- Spacing (Stitch uses px-12 / py-32 to py-48) ---- */
+  --spacing-container-max: 1600px;
+  --spacing-container-wide: 1920px;
+  --spacing-margin-desktop: 48px;
+  --spacing-margin-mobile: 24px;
+  --spacing-unit: 8px;
+
+  /* ---- Z-index ---- */
+  --z-base: 0;
+  --z-elevated: 10;
+  --z-sticky: 20;
+  --z-overlay: 30;
+  --z-modal: 40;
+  --z-tooltip: 50;
+}
+
+/* ==========================================================================
+   BASE RESET — Stitch exact
+   ========================================================================== */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  body {
+    @apply bg-[var(--color-canvas)] text-[var(--color-navy)] font-body antialiased;
+    line-height: 1.55;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+    letter-spacing: -0.02em;
+    line-height: 1.08;
+    font-weight: 400;
+    text-wrap: balance;
+  }
+
+  h1 { font-size: clamp(2.75rem, 7vw, 6.5rem); }
+  h2 { font-size: clamp(2rem, 4.5vw, 4rem); letter-spacing: -0.025em; }
+  h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
+  h4 { font-size: clamp(1.125rem, 1.5vw, 1.375rem); }
+
+  p {
+    text-wrap: pretty;
+    line-height: 1.65;
+    max-width: 65ch;
+  }
+
+  /* Selection — brass (Stitch: selection:bg-brand-gold/30) */
+  ::selection {
+    background-color: rgba(212, 165, 116, 0.3);
+    color: var(--color-navy);
+  }
+
+  /* Focus rings */
+  *:focus-visible {
+    outline: 1px solid var(--color-navy);
+    outline-offset: 3px;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  img, video, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   COMPONENT UTILITIES — Stitch patterns
+   ========================================================================== */
+@layer components {
+  /* Container — Stitch uses px-12 / max-w-[1600px] */
+  .container-editorial {
+    @apply mx-auto w-full;
+    padding-left: var(--spacing-margin-mobile);
+    padding-right: var(--spacing-margin-mobile);
+    max-width: var(--spacing-container-max);
+  }
+  @media (min-width: 768px) {
+    .container-editorial {
+      padding-left: var(--spacing-margin-desktop);
+      padding-right: var(--spacing-margin-desktop);
+    }
+  }
+
+  /* Wide container (full editorial) */
+  .container-wide {
+    @apply mx-auto w-full;
+    max-width: var(--spacing-container-wide);
+  }
+
+  /* Ghost numeral — Stitch: font-size: 24vw, color: rgba(10,37,64,0.03) */
+  .ghost-numeral {
+    font-family: var(--font-display);
+    font-size: 24vw;
+    line-height: 1;
+    color: rgba(10, 37, 64, 0.03);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* Section numeral (smaller, e.g. "04" in process) */
+  .section-numeral {
+    font-family: var(--font-display);
+    font-size: 10vw;
+    line-height: 0.8;
+    opacity: 0.05;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* Record marker — large section number */
+  .record-marker {
+    @apply font-display text-[var(--color-navy)]/8 select-none;
+    font-size: clamp(6rem, 14vw, 12rem);
+    line-height: 0.85;
+    letter-spacing: -0.06em;
+    font-weight: 300;
+  }
+
+  /* Caption micro-label */
+  .caption-label {
+    @apply font-label uppercase text-[11px] tracking-[0.22em];
+    color: var(--color-muted);
+  }
+
+  /* font-headline alias for font-display */
+  .font-headline {
+    font-family: var(--font-display);
+  }
+
+  /* Editorial spacing for large headlines */
+  .editorial-spacing {
+    letter-spacing: -0.02em;
+  }
+
+  /* Inverse CTA link for dark backgrounds */
+  .cta-link--inverse {
+    color: var(--color-paper);
+  }
+  .cta-link--inverse::after {
+    background-color: var(--color-brass);
+  }
+  .cta-link--inverse:hover::after {
+    background-color: var(--color-paper);
+  }
+
+  /* Hairline dividers — Stitch exact */
+  .hairline {
+    border-bottom: 0.5px solid rgba(10, 37, 64, 0.1);
+  }
+  .hairline-t {
+    border-top: 0.5px solid rgba(10, 37, 64, 0.12);
+  }
+  .hairline-b {
+    border-bottom: 0.5px solid rgba(10, 37, 64, 0.12);
+  }
+  .hairline-divider {
+    height: 1px;
+    background-color: rgba(10, 37, 64, 0.1);
+    width: 100%;
+  }
+
+  /* Section rule */
+  .section-rule {
+    @apply border-t border-[var(--color-rule)];
+  }
+
+  /* CTA link — Stitch underline animation */
+  .cta-link {
+    @apply font-body text-[15px] inline-flex items-center gap-2;
+    color: var(--color-navy);
+    text-underline-offset: 5px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    transition: text-decoration-thickness 200ms ease, gap 200ms ease;
+  }
+  .cta-link:hover {
+    text-decoration-thickness: 2px;
+    gap: 0.875rem;
+  }
+  .cta-link .arrow {
+    @apply inline-block transition-transform duration-300;
+  }
+  .cta-link:hover .arrow {
+    transform: translateX(4px);
+  }
+
+  /* Stitch CTA — underline with scale-x animation */
+  .cta-underline {
+    position: relative;
+    display: inline-block;
+  }
+  .cta-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-blue);
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+  }
+  .cta-underline:hover::after {
+    transform: scaleX(0);
+  }
+
+  /* Editorial pull-quote */
+  .editorial-quote {
+    @apply font-display italic;
+    font-size: clamp(1.75rem, 3.5vw, 3rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--color-navy);
+  }
+
+  /* Tabular row — Stitch hairline separators */
+  .tabular-row {
+    @apply w-full;
+    border-top: 1px solid rgba(10, 37, 64, 0.1);
+    padding: 1.25rem 0;
+  }
+  .tabular-row:last-child {
+    border-bottom: 1px solid rgba(10, 37, 64, 0.1);
+  }
+
+  /* Field label */
+  .field-label {
+    @apply font-label uppercase text-[10px] tracking-[0.18em];
+    color: var(--color-muted);
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  /* Field input — hairline bottom, no border-radius */
+  .field-input {
+    @apply font-body w-full bg-transparent border-0 border-b py-3 text-[15px];
+    color: var(--color-navy);
+    border-bottom: 1px solid var(--color-rule-strong);
+    outline: none;
+    transition: border-color 200ms ease;
+  }
+  .field-input:focus {
+    border-bottom-color: var(--color-navy);
+  }
+  .field-input::placeholder {
+    color: var(--color-subtle);
+  }
+
+  .field-area {
+    @apply font-body w-full bg-transparent border-0 border-b py-3 text-[15px] resize-y;
+    color: var(--color-navy);
+    border-bottom: 1px solid var(--color-rule-strong);
+    outline: none;
+    transition: border-color 200ms ease;
+    min-height: 120px;
+  }
+
+  /* Prose */
+  .prose-editorial {
+    @apply font-body text-[15px] leading-[1.7];
+    color: var(--color-muted);
+    max-width: 56ch;
+  }
+  .prose-editorial strong {
+    @apply font-medium;
+    color: var(--color-navy);
+  }
+
+  /* Vertical text — Stitch sidebar */
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  /* Text huge — product name clamp */
+  .text-huge {
+    font-size: clamp(4rem, 12vw, 10rem);
+    line-height: 0.9;
+  }
+
+  /* Sticky viewport — product detail */
+  .sticky-viewport {
+    height: 100vh;
+    top: 0;
+    position: sticky;
+  }
+
+  /* Custom cursor — product detail */
+  .custom-cursor {
+    cursor: crosshair;
+  }
+
+  /* Editorial reveal — Stitch IntersectionObserver animation */
+  .editorial-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .editorial-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Massive headline responsive */
+  @media (max-width: 768px) {
+    .massive-headline { font-size: 3.5rem; line-height: 1; }
+    .quote-text { font-size: 1.75rem; line-height: 1.2; }
+  }
+
+  /* Brass numeral highlight */
+  .numeral-brass {
+    color: var(--color-brass);
+  }
+
+  /* Eyebrow caption */
+  .eyebrow-caption {
+    @apply font-label uppercase text-[11px] tracking-[0.2em];
+    color: var(--color-muted);
+  }
+
+  /* Selection brass (for dark sections) */
+  .selection-brass ::selection {
+    background-color: #D4A574;
+    color: white;
+  }
+}
+
+/* ==========================================================================
+   ANIMATIONS — Mobile menu + reveals
+   ========================================================================== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .editorial-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-\[fadeIn_400ms_ease-out\],
+  .animate-\[slideIn_400ms_cubic-bezier\(0\.16\,1\,0\.3\,1\)\] {
+    animation: none;
+  }
+}
+
+/* ==========================================================================
+   SCROLLBAR — Stitch: 4px, brass thumb
+   ========================================================================== */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-canvas);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brass);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-navy);
+}
