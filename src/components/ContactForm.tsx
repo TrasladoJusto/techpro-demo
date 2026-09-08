@@ -171,7 +171,7 @@ export default function ContactForm({ source = 'contacto', defaultValue }: { sou
         />
         <span className="font-body text-[13px] text-[var(--color-muted)] leading-relaxed">
           Acepto recibir información sobre productos, capacitaciones y novedades
-          de LaserTech por email.
+          de TechPro por email.
         </span>
       </label>
 

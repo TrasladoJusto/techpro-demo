@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://lasertech-demo.com/sitemap.xml',
+    sitemap: 'https://techpro-demo.com/sitemap.xml',
   };
 }

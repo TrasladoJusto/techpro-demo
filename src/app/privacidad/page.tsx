@@ -2,11 +2,11 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidad | Endovita Technology',
+  title: 'Política de Privacidad | TechPro Solutions',
   description:
-    'Conoce cómo Endovita Technology recopila, usa y protege tu información personal.',
+    'Conoce cómo TechPro Solutions recopila, usa y protege tu información personal.',
   alternates: {
-    canonical: 'https://endovitatechnology.com/privacidad',
+    canonical: 'https://techpro-demo.com/privacidad',
   },
 };
 
@@ -46,7 +46,7 @@ export default function PrivacidadPage() {
                   Utilizamos su información para: responder a sus consultas técnicas
                   y comerciales, enviar cotizaciones de equipos, coordinar
                   capacitaciones y servicios técnicos, y enviar información sobre
-                  productos y novedades de Endovita Technology (solo si usted ha
+                  productos y novedades de TechPro Solutions (solo si usted ha
                   dado su consentimiento).
                 </p>
               </div>
@@ -96,10 +96,10 @@ export default function PrivacidadPage() {
                   Para consultas sobre esta política de privacidad o sobre el
                   tratamiento de sus datos personales, comuníquese con nosotros a
                   través de{' '}
-                  <a href="mailto:endovitatechnology@gmail.com" className="underline underline-offset-4 decoration-[var(--color-navy)]/20 hover:decoration-[var(--color-navy)] transition-colors">
-                    endovitatechnology@gmail.com
+                  <a href="mailto:demo@techpro-demo.com" className="underline underline-offset-4 decoration-[var(--color-navy)]/20 hover:decoration-[var(--color-navy)] transition-colors">
+                    demo@techpro-demo.com
                   </a>{' '}
-                  o al +51 932 433 154.
+                  o al +51 900 000 000.
                 </p>
               </div>
             </div>

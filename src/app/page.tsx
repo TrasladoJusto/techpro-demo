@@ -51,7 +51,7 @@ export default function Home() {
           <div className="relative w-full h-[50dvh] md:h-[70vh] lg:h-[85vh] overflow-hidden">
             <Image
               src="/images/stitch/home-hero-product.webp"
-              alt="Equipo láser dental de alta precisión — Endovita Technology"
+              alt="Equipo láser dental de alta precisión — TechPro Solutions"
               fill
               className="object-cover scale-110 translate-x-8 md:translate-x-12"
               sizes="(max-width: 768px) 100vw, 33vw"
@@ -61,7 +61,7 @@ export default function Home() {
         </div>
         <div className="col-span-1 hidden md:flex justify-center items-center">
           <span className="text-vertical font-label text-[10px] uppercase tracking-[0.5em] text-[#0A2540]/30 whitespace-nowrap">
-            LASERTECH DISTRIBUIDOR AUTORIZADO — 2024
+            TECHPRO DISTRIBUIDOR AUTORIZADO — 2024
           </span>
         </div>
       </section>
@@ -120,7 +120,7 @@ export default function Home() {
         <div className="col-span-12 md:col-span-7 md:pl-12 md:border-l border-[#0A2540]/5 order-1 md:order-2 mb-10 md:mb-0">
           <div className="aspect-[4/5] bg-[#F8F5F0] relative overflow-hidden mb-8">
             <Image
-              alt="Control panel de equipo láser dental Endovita"
+              alt="Control panel de equipo láser dental TechPro"
               src="/images/stitch/control-panel.webp"
               fill
               className="object-cover mix-blend-multiply opacity-80"
@@ -220,7 +220,7 @@ export default function Home() {
           </blockquote>
           <cite className="not-italic">
             <span className="font-label text-[11px] uppercase tracking-widest text-[#D4A574] block mb-1">
-              Dr. Alejandro Vargas
+              Dr. Carlos Mendoza
             </span>
             <span className="font-body text-sm opacity-50 uppercase tracking-wider">
               Especialista en Rehabilitación Oral, Lima
@@ -293,7 +293,7 @@ export default function Home() {
               O POR CANALES DIRECTOS
             </span>
             <a
-              href="https://wa.me/51999888777?text=Hola%20LaserTech%2C%20quiero%20informaci%C3%B3n"
+              href="https://wa.me/51900000000?text=Hola%20TechPro%2C%20quiero%20informaci%C3%B3n"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative py-4"

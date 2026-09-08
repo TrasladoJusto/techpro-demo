@@ -1,6 +1,6 @@
-# Endovita Technology
+# TechPro Demo
 
-Sitio web oficial de Endovita Technology S.A.C. — Distribuidor oficial de equipos láser odontológicos en Perú.
+Sitio web oficial de TechPro Solutions S.A.C. — Distribuidor oficial de equipos láser odontológicos en Perú.
 
 ## Tecnologías
 
@@ -53,11 +53,11 @@ Copiar `.env.example` a `.env.local` y configurar:
 ```env
 RESEND_API_KEY=re_xxx          # API key de Resend
 DB_HOST=localhost              # Host de MySQL
-DB_USER=u_endovita             # Usuario de MySQL
+DB_USER=u_techpro              # Usuario de MySQL
 DB_PASSWORD=xxx                # Contraseña de MySQL
-DB_NAME=endovita               # Nombre de la base de datos
+DB_NAME=techpro                # Nombre de la base de datos
 NEXT_PUBLIC_GA4_ID=G-XXX       # Google Analytics 4 ID
-NEXT_PUBLIC_PLAUSIBLE_DOMAIN=endovitatechnology.com
+NEXT_PUBLIC_PLAUSIBLE_DOMAIN=techpro-demo.com
 ```
 
 ## Despliegue
@@ -66,4 +66,4 @@ El proyecto está configurado para desplegarse en Vercel o cualquier plataforma 
 
 ## Licencia
 
-© 2026 Endovita Technology S.A.C. Todos los derechos reservados.
+© 2026 TechPro Solutions S.A.C. Todos los derechos reservados.

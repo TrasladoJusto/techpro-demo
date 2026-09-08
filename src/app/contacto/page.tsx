@@ -3,11 +3,11 @@ import type { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contacto | LaserTech',
+  title: 'Contacto | TechPro',
   description:
     'Solicita diagnóstico de inversión técnica para equipos láser dentales. Respondemos en menos de 24 horas hábiles.',
   alternates: {
-    canonical: 'https://lasertech-demo.com/contacto',
+    canonical: 'https://techpro-demo.com/contacto',
   },
 };
 
@@ -49,13 +49,13 @@ export default async function ContactoPage({ searchParams }: PageProps) {
             {/* Contact details — tabular rows */}
             <div className="space-y-0 border-t border-[var(--color-rule)]">
               {[
-                { label: 'Teléfono', value: '+51 999 888 777', href: 'tel:+51999888777' },
+                { label: 'Teléfono', value: '+51 900 000 000', href: 'tel:+51900000000' },
                 {
                   label: 'Email',
-                  value: 'demo@lasertech-demo.com',
-                  href: 'mailto:demo@lasertech-demo.com',
+                  value: 'demo@techpro-demo.com',
+                  href: 'mailto:demo@techpro-demo.com',
                 },
-                { label: 'Dirección', value: 'Av. Principal 123', sub: 'San Isidro, Lima, Perú' },
+                { label: 'Dirección', value: 'Av. Ejemplo 456', sub: 'San Isidro, Lima, Perú' },
                 { label: 'Horario', value: 'L-V 9:00 — 18:00' },
               ].map((item) => (
                 <div
@@ -102,7 +102,7 @@ export default async function ContactoPage({ searchParams }: PageProps) {
             <div className="mt-24 pt-8 border-t border-[var(--color-rule)]">
               <p className="font-label text-[10px] leading-relaxed text-[var(--color-navy)]/40 max-w-xs">
                 Al enviar este formulario, usted solicita una asesoría personalizada. Un
-                especialista de LaserTech evaluará su perfil para proponer la solución
+                especialista de TechPro evaluará su perfil para proponer la solución
                 técnica más adecuada a su práctica clínica.
               </p>
             </div>

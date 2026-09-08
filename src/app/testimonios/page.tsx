@@ -2,20 +2,20 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Testimonios | Endovita Technology',
+  title: 'Testimonios | TechPro Solutions',
   description:
-    'Lo que dicen quienes invirtieron en tecnología láser dental con Endovita. Experiencias reales de odontólogos peruanos.',
+    'Lo que dicen quienes invirtieron en tecnología láser dental con TechPro. Experiencias reales de odontólogos peruanos.',
   alternates: {
-    canonical: 'https://endovitatechnology.com/testimonios',
+    canonical: 'https://techpro-demo.com/testimonios',
   },
 };
 
 const testimonials = [
   {
     quote:
-      'Cuando otros vendedores me repetían las mismas especificaciones, Endovita me dijo: \'Para tu caso no te conviene eso.\' Buscaba asesores, no vendedores.',
-    author: 'Dra. Carmen Ríos-Vela',
-    context: 'Clínica San Felipe — equipada 2023',
+      'Cuando otros vendedores me repetían las mismas especificaciones, TechPro me dijo: \'Para tu caso no te conviene eso.\' Buscaba asesores, no vendedores.',
+    author: 'Dra. Ana Torres',
+    context: 'Clínica Centro Dental — equipada 2023',
     align: 'left',
     span: 'col-span-12 md:col-start-2 md:col-span-10 lg:col-start-3 lg:col-span-8 text-center md:text-left',
   },
@@ -149,7 +149,7 @@ export default function TestimoniosPage() {
                 </span>
               </Link>
               <Link
-                href="https://wa.me/51932433154?text=Hola%20Endovita%2C%20quiero%20informaci%C3%B3n"
+                href="https://wa.me/51900000000?text=Hola%20TechPro%2C%20quiero%20informaci%C3%B3n"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-reveal

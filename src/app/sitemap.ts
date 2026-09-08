@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllProducts } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://lasertech-demo.com';
+  const baseUrl = 'https://techpro-demo.com';
   const products = getAllProducts();
 
   const staticPages = [

@@ -12,8 +12,8 @@ function getResend(): Resend {
   return resendInstance;
 }
 
-const FROM_EMAIL = 'LaserTech <notificaciones@lasertech-demo.com>';
-const TO_EMAIL = 'demo@lasertech-demo.com';
+const FROM_EMAIL = 'TechPro <notificaciones@techpro-demo.com>';
+const TO_EMAIL = 'demo@techpro-demo.com';
 
 function escapeHtml(str: string): string {
   return str
@@ -74,7 +74,7 @@ export async function sendContactEmail(data: {
             </tr>` : ''}
           </table>
           <p style="color: #6b7280; font-size: 12px; margin-top: 24px;">
-            Este email fue enviado desde el formulario de contacto de lasertech-demo.com
+            Este email fue enviado desde el formulario de contacto de techpro-demo.com
           </p>
         </div>
       `,

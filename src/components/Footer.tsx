@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-8 max-w-[1920px] mx-auto">
         {/* Left — Logo + tagline */}
         <div className="md:col-span-4">
-          <p className="font-headline text-xl text-[#0A2540] mb-6 md:mb-8">LaserTech</p>
+          <p className="font-headline text-xl text-[#0A2540] mb-6 md:mb-8">TechPro</p>
           <p className="font-body text-[11px] uppercase tracking-[0.2em] opacity-60 max-w-xs leading-relaxed">
             Surgical Excellence in Dental Innovation. Distribuidor autorizado para el mercado sudamericano.
           </p>
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-t border-[#0A2540]/10 pt-6 md:pt-8 gap-4">
             <p className="font-body text-[11px] uppercase tracking-[0.2em] opacity-40">
-              &copy; {currentYear} LaserTech. Lima, Peru.
+              &copy; {currentYear} TechPro. Lima, Peru.
             </p>
             <div className="flex gap-4">
               <span className="w-2 h-2 rounded-full bg-[#D4A574]" />

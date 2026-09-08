@@ -2,11 +2,11 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Términos y Condiciones | Endovita Technology',
+  title: 'Términos y Condiciones | TechPro Solutions',
   description:
-    'Términos y condiciones de uso de los servicios y productos de Endovita Technology.',
+    'Términos y condiciones de uso de los servicios y productos de TechPro Solutions.',
   alternates: {
-    canonical: 'https://endovitatechnology.com/terminos',
+    canonical: 'https://techpro-demo.com/terminos',
   },
 };
 
@@ -31,8 +31,8 @@ export default function TerminosPage() {
                   1. Aceptación de los términos
                 </h2>
                 <p className="font-body text-[14px] text-[var(--color-muted)] leading-relaxed">
-                  Al acceder y utilizar el sitio web de Endovita Technology
-                  (endovitatechnology.com), usted acepta estos términos y
+                  Al acceder y utilizar el sitio web de TechPro Solutions
+                  (techpro-demo.com), usted acepta estos términos y
                   condiciones en su totalidad. Si no está de acuerdo con alguno
                   de estos términos, no debe utilizar nuestro sitio web.
                 </p>
@@ -43,7 +43,7 @@ export default function TerminosPage() {
                   2. Servicios
                 </h2>
                 <p className="font-body text-[14px] text-[var(--color-muted)] leading-relaxed">
-                  Endovita Technology S.A.C. es distribuidor oficial de equipos
+                  TechPro Solutions S.A.C. es distribuidor oficial de equipos
                   láser odontológicos Dr. Smile (Italia) y Quicklase (Brasil) en
                   Perú. Los precios mostrados son de referencia y pueden variar.
                   Las cotizaciones formales se proporcionan previa evaluación
@@ -58,7 +58,7 @@ export default function TerminosPage() {
                 <p className="font-body text-[14px] text-[var(--color-muted)] leading-relaxed">
                   Todo el contenido de este sitio web, incluyendo textos,
                   imágenes, logotipos, gráficos y diseños, es propiedad de
-                  Endovita Technology o de sus proveedores y está protegido por
+                  TechPro Solutions o de sus proveedores y está protegido por
                   las leyes de propiedad intelectual de Perú.
                 </p>
               </div>
@@ -69,8 +69,8 @@ export default function TerminosPage() {
                 </h2>
                 <p className="font-body text-[14px] text-[var(--color-muted)] leading-relaxed">
                   Los equipos cuentan con garantía directa del fabricante. El
-                  soporte técnico es proporcionado directamente por Endovita
-                  Technology. Las condiciones específicas de garantía se detallan
+                  soporte técnico es proporcionado directamente por TechPro
+                  Solutions. Las condiciones específicas de garantía se detallan
                   en cada cotización y contrato de venta.
                 </p>
               </div>
@@ -80,7 +80,7 @@ export default function TerminosPage() {
                   5. Limitación de responsabilidad
                 </h2>
                 <p className="font-body text-[14px] text-[var(--color-muted)] leading-relaxed">
-                  Endovita Technology no se hace responsable por el uso indebido
+                  TechPro Solutions no se hace responsable por el uso indebido
                   de los equipos láser. La capacitación clínica es un requisito
                   previo para el uso de cualquier equipo distribuido por nuestra
                   empresa.

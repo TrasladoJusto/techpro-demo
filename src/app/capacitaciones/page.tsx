@@ -3,11 +3,11 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Capacitaciones | LaserTech',
+  title: 'Capacitaciones | TechPro',
   description:
     'Programas de certificación láser para odontólogos. Diploma universitario, práctica clínica supervisada, grupos reducidos.',
   alternates: {
-    canonical: 'https://lasertech-demo.com/capacitaciones',
+    canonical: 'https://techpro-demo.com/capacitaciones',
   },
 };
 
@@ -17,7 +17,7 @@ const sessions = [
     title: 'Introducción al láser de diodo en odontología',
     date: '15 ago 2026',
     time: '9:00 — 13:00',
-    location: 'Sede Endovita, San Isidro',
+    location: 'Sede TechPro, San Isidro',
     status: 'Inscripción abierta',
     spots: '6/15 cupos libres',
   },
@@ -26,7 +26,7 @@ const sessions = [
     title: 'Láser en endodoncia: desinfección y sellado',
     date: '22 ago 2026',
     time: '9:00 — 17:00',
-    location: 'Sede Endovita, San Isidro',
+    location: 'Sede TechPro, San Isidro',
     status: 'Inscripción abierta',
     spots: '10/15 cupos libres',
   },
@@ -35,7 +35,7 @@ const sessions = [
     title: 'Periodoncia regenerativa con láser de baja potencia',
     date: '05 sep 2026',
     time: '9:00 — 13:00',
-    location: 'Sede Endovita, San Isidro',
+    location: 'Sede TechPro, San Isidro',
     status: 'Próximamente',
     spots: '15/15 cupos libres',
   },
@@ -44,7 +44,7 @@ const sessions = [
     title: 'Blanqueamiento láser: protocolo Dentalase',
     date: '12 sep 2026',
     time: '9:00 — 13:00',
-    location: 'Sede Endovita, San Isidro',
+    location: 'Sede TechPro, San Isidro',
     status: 'Próximamente',
     spots: '15/15 cupos libres',
   },

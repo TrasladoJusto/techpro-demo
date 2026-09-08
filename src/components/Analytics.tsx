@@ -3,7 +3,7 @@
 import Script from 'next/script';
 
 const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
-const PLAUSIBLE_DOMAIN = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN || 'endovitatechnology.com';
+const PLAUSIBLE_DOMAIN = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN || 'techpro-demo.com';
 
 export function Analytics() {
   return (

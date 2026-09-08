@@ -4,11 +4,11 @@ import SupportForm from '@/components/SupportForm';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Servicio Técnico | LaserTech',
+  title: 'Servicio Técnico | TechPro',
   description:
     'Soporte técnico directo del fabricante. Garantía internacional, repuestos originales, respuesta en menos de 24 horas.',
   alternates: {
-    canonical: 'https://lasertech-demo.com/servicio-tecnico',
+    canonical: 'https://techpro-demo.com/servicio-tecnico',
   },
 };
 
@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: '¿Cómo solicito servicio técnico?',
-    a: 'Puede comunicarse al +51 999 888 777 o enviar un email a demo@lasertech-demo.com. Respondemos en menos de 24 horas hábiles con un diagnóstico preliminar.',
+    a: 'Puede comunicarse al +51 900 000 000 o enviar un email a demo@techpro-demo.com. Respondemos en menos de 24 horas hábiles con un diagnóstico preliminar.',
   },
 ];
 
@@ -77,7 +77,7 @@ export default function ServicioTecnicoPage() {
           </div>
           <div className="hidden lg:block col-span-4">
             <div className="h-[160px] overflow-hidden">
-              <Image src="/images/support-tech.webp" alt="Soporte técnico LaserTech" width={400} height={160} sizes="33vw" className="w-full h-full object-cover" />
+              <Image src="/images/support-tech.webp" alt="Soporte técnico TechPro" width={400} height={160} sizes="33vw" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@ export default function ServicioTecnicoPage() {
             <div className="mt-12 pt-6 border-t border-[var(--color-rule)]">
               <p className="font-label text-[10px] leading-relaxed text-[var(--color-navy)]/40 max-w-xs">
                 Para emergencias clínicas fuera del horario laboral, contacte
-                directamente al +51 932 433 154.
+                directamente al +51 900 000 000.
               </p>
             </div>
           </div>
@@ -185,12 +185,12 @@ export default function ServicioTecnicoPage() {
           </h2>
           <div data-reveal data-reveal-delay="2">
             <a
-              href="https://wa.me/51999888777?text=Hola%20LaserTech%2C%20necesito%20soporte%20t%C3%A9cnico"
+              href="https://wa.me/51900000000?text=Hola%20TechPro%2C%20necesito%20soporte%20t%C3%A9cnico"
               target="_blank"
               rel="noopener noreferrer"
               className="cta-link cta-link--inverse text-[15px]"
             >
-              WhatsApp: +51 999 888 777
+              WhatsApp: +51 900 000 000
               <span className="arrow">→</span>
             </a>
           </div>

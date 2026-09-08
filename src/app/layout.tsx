@@ -35,15 +35,15 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: 'LaserTech | Tecnología láser dental de precisión',
-    template: '%s | LaserTech',
+    default: 'TechPro | Tecnología láser dental de precisión',
+    template: '%s | TechPro',
   },
   description:
     'Distribuidor autorizado de equipos láser odontológicos. Asesoría por especialistas, capacitación y servicio técnico.',
-  metadataBase: new URL('https://lasertech-demo.com'),
-  authors: [{ name: 'LaserTech' }],
-  creator: 'LaserTech',
-  publisher: 'LaserTech',
+  metadataBase: new URL('https://techpro-demo.com'),
+  authors: [{ name: 'TechPro' }],
+  creator: 'TechPro',
+  publisher: 'TechPro',
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.svg',
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_PE',
-    url: 'https://lasertech-demo.com',
-    siteName: 'LaserTech',
-    title: 'LaserTech | Tecnología láser dental de precisión',
+    url: 'https://techpro-demo.com',
+    siteName: 'TechPro',
+    title: 'TechPro | Tecnología láser dental de precisión',
     description:
       'Distribuidor autorizado de equipos láser odontológicos. Asesoría por especialistas, capacitación y servicio técnico.',
     images: [
@@ -61,14 +61,14 @@ export const metadata: Metadata = {
         url: '/og-default.svg',
         width: 1200,
         height: 630,
-        alt: 'LaserTech — Tecnología láser dental de precisión',
+        alt: 'TechPro — Tecnología láser dental de precisión',
         type: 'image/svg+xml',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LaserTech | Tecnología láser dental',
+    title: 'TechPro | Tecnología láser dental',
     description:
       'Distribuidor autorizado de equipos láser odontológicos.',
     images: ['/og-default.svg'],
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://lasertech-demo.com',
+    canonical: 'https://techpro-demo.com',
   },
 };
 
@@ -97,14 +97,14 @@ export default function RootLayout({
   const websiteJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'LaserTech',
-    url: 'https://lasertech-demo.com',
+    name: 'TechPro',
+    url: 'https://techpro-demo.com',
     description:
       'Distribuidor autorizado de equipos láser odontológicos.',
     inLanguage: 'es',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://lasertech-demo.com/equipos?q={search_term_string}',
+      target: 'https://techpro-demo.com/equipos?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };

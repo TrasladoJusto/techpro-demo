@@ -3,7 +3,7 @@ import { CheckCircle, ChatCircle } from '@/components/Icons';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Mensaje enviado | Endovita',
+  title: 'Mensaje enviado | TechPro',
   description: 'Hemos recibido tu mensaje. Te responderemos pronto.',
 };
 
@@ -49,7 +49,7 @@ export default function ThanksPage() {
             <span className="arrow">→</span>
           </Link>
           <a
-            href="https://wa.me/51932433154?text=Hola%20Endovita%2C%20necesito%20atenci%C3%B3n%20urgente"
+            href="https://wa.me/51900000000?text=Hola%20TechPro%2C%20necesito%20atenci%C3%B3n%20urgente"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-link text-[15px]"

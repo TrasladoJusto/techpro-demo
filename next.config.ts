@@ -34,7 +34,7 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     serverActions: {
-      allowedOrigins: ['lasertech-demo.pages.dev', 'localhost:3000'],
+      allowedOrigins: ['techpro-demo.pages.dev', 'localhost:3000'],
     },
   },
 };

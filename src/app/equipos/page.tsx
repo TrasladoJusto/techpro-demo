@@ -4,11 +4,11 @@ import { getAllProducts, getUniqueCategories } from '@/lib/data';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Catálogo de Equipos Láser | LaserTech',
+  title: 'Catálogo de Equipos Láser | TechPro',
   description:
     'Apex Laser, Vitalase. Equipos láser de precisión para odontología. Distribuidor autorizado en Perú.',
   alternates: {
-    canonical: 'https://lasertech-demo.com/equipos',
+    canonical: 'https://techpro-demo.com/equipos',
   },
 };
 
@@ -271,7 +271,7 @@ export default async function EquiposPage({ searchParams }: PageProps) {
                 Innovación que respira.
               </span>
               <p className="text-white/60 mb-12 text-base md:text-lg">
-                Cada equipo LaserTech incluye una certificación técnica de 40 horas
+                Cada equipo TechPro incluye una certificación técnica de 40 horas
                 para su personal clínico, garantizando seguridad y eficiencia desde
                 el primer día.
               </p>
@@ -295,7 +295,7 @@ export default async function EquiposPage({ searchParams }: PageProps) {
           integración biológica a través de la luz.&rdquo;
         </h2>
         <p className="font-label text-[11px] uppercase tracking-[0.4em] text-[#0A2540]/40">
-          &mdash; Dr. Alessandro Rossi, Clinical Advisor
+          &mdash; Dr. Marco Bianchi, Clinical Advisor
         </p>
       </section>
     </div>

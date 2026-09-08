@@ -14,10 +14,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const product = getProductById(slug);
   if (!product) return { title: 'Equipo no encontrado' };
   return {
-    title: `${product.name} | LaserTech`,
+    title: `${product.name} | TechPro`,
     description: product.shortDescription,
     alternates: {
-      canonical: `https://lasertech-demo.com/equipos/${product.id}`,
+      canonical: `https://techpro-demo.com/equipos/${product.id}`,
     },
   };
 }
@@ -52,8 +52,8 @@ export default async function EquipoDetailPage({ params }: PageProps) {
         name={product.name}
         description={product.shortDescription}
         brand={product.brand}
-        image={`https://lasertech-demo.com${product.image}`}
-        url={`https://lasertech-demo.com/equipos/${product.id}`}
+        image={`https://techpro-demo.com${product.image}`}
+        url={`https://techpro-demo.com/equipos/${product.id}`}
       />
 
       {/* Ghost numeral "03" — Stitch exact */}

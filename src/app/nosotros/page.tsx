@@ -3,30 +3,30 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Nosotros | LaserTech',
+  title: 'Nosotros | TechPro',
   description:
-    'Tres personas detrás de cada láser. Equipo de LaserTech — odontología láser en Perú desde 2021.',
+    'Tres personas detrás de cada láser. Equipo de TechPro — odontología láser en Perú desde 2021.',
   alternates: {
-    canonical: 'https://lasertech-demo.com/nosotros',
+    canonical: 'https://techpro-demo.com/nosotros',
   },
 };
 
 const team = [
   {
     role: 'CEO / FUNDADOR ODONTÓLOGO',
-    name: 'Dr. Alejandro V.',
+    name: 'Dr. Carlos M.',
     desc: 'Especialista en odontología láser con más de 15 años de experiencia clínica.',
     img: '/images/team-ceo-odontologo.webp',
   },
   {
     role: 'INGENIERO DE SOPORTE',
-    name: 'Ing. Roberto S.',
+    name: 'Ing. Diego L.',
     desc: 'Certificado en mantenimiento de sistemas fotónicos y protocolos de seguridad láser.',
     img: '/images/team-coordinator.webp',
   },
   {
     role: 'COORDINADORA DE CAPACITACIONES',
-    name: 'Lucía F.',
+    name: 'María P.',
     desc: 'Gestión de programas educativos de posgrado para la certificación clínica de especialistas.',
     img: '/images/team-tech-lead.avif',
   },
@@ -73,7 +73,7 @@ export default function NosotrosPage() {
           </div>
           <div className="hidden lg:block col-span-4">
             <div className="h-[200px] overflow-hidden">
-              <Image src="/images/about-office.avif" alt="Oficina Endovita Technology" width={400} height={200} sizes="33vw" className="w-full h-full object-cover" />
+              <Image src="/images/about-office.avif" alt="Oficina TechPro Solutions" width={400} height={200} sizes="33vw" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

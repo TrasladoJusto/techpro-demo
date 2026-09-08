@@ -61,7 +61,7 @@ export default function Header() {
       <header className="hidden md:block fixed top-0 left-0 right-0 z-50 bg-[#FAFBFC]/80 backdrop-blur-md border-b border-[#0A2540]/10">
         <nav className="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
           <Link href="/" className="font-headline text-2xl font-semibold tracking-tighter text-[#0A2540] hover:opacity-80 transition-opacity">
-            LaserTech
+            TechPro
           </Link>
 
           <div className="flex items-center gap-12">
@@ -89,7 +89,7 @@ export default function Header() {
       <header className="md:hidden fixed top-0 left-0 right-0 z-50 bg-[#FAFBFC] border-b border-[#0A2540]/10">
         <nav className="flex justify-between items-center h-[56px] px-6">
           <Link href="/" className="font-headline text-2xl font-semibold tracking-tighter text-[#0A2540]">
-            LaserTech
+            TechPro
           </Link>
 
           <button
