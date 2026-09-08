@@ -2,6 +2,8 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: 'Contacto | TechPro',
   description:

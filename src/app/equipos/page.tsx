@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { getAllProducts, getUniqueCategories } from '@/lib/data';
 import type { Metadata } from 'next';
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: 'Catálogo de Equipos Láser | TechPro',
   description:
