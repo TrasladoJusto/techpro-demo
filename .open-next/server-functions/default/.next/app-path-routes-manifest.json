@@ -8,12 +8,12 @@
   "/page": "/",
   "/contacto/page": "/contacto",
   "/capacitaciones/page": "/capacitaciones",
-  "/nosotros/page": "/nosotros",
+  "/equipos/[slug]/page": "/equipos/[slug]",
   "/equipos/page": "/equipos",
   "/privacidad/page": "/privacidad",
-  "/equipos/[slug]/page": "/equipos/[slug]",
   "/terminos/page": "/terminos",
   "/servicio-tecnico/page": "/servicio-tecnico",
   "/thanks/page": "/thanks",
+  "/nosotros/page": "/nosotros",
   "/testimonios/page": "/testimonios"
 }

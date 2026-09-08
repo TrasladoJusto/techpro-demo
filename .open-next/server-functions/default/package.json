@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "techpro-demo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -29,6 +29,16 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.130.0"
+  },
+  "allowScripts": {
+    "unrs-resolver@1.12.2": true,
+    "wrangler@4.130.0": true,
+    "workerd@1.20250718.0": true,
+    "workerd@1.20260908.1": true,
+    "esbuild@0.25.4": true,
+    "esbuild@0.15.18": true,
+    "esbuild@0.28.1": true
   }
 }

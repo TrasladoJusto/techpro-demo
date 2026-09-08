@@ -16,7 +16,7 @@ Object.defineProperty = function(o, p, a) {
 
   
   
-  globalThis.openNextDebug = false;globalThis.openNextVersion = "4.1.4";globalThis.nextVersion = "15.5.2";
+  globalThis.openNextDebug = false;globalThis.openNextVersion = "4.1.4";globalThis.nextVersion = "15.5.25";
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -50,7 +50,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   mod
 ));
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/utils/error.js
+// node_modules/@opennextjs/aws/dist/utils/error.js
 function isOpenNextError(e) {
   try {
     return "__openNextInternal" in e;
@@ -59,11 +59,11 @@ function isOpenNextError(e) {
   }
 }
 var init_error = __esm({
-  "node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/utils/error.js"() {
+  "node_modules/@opennextjs/aws/dist/utils/error.js"() {
   }
 });
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/adapters/logger.js
+// node_modules/@opennextjs/aws/dist/adapters/logger.js
 function debug(...args) {
   if (globalThis.openNextDebug) {
     console.log(...args);
@@ -106,7 +106,7 @@ function getOpenNextErrorLogLevel() {
 }
 var DOWNPLAYED_ERROR_LOGS, isDownplayedErrorLog;
 var init_logger = __esm({
-  "node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/adapters/logger.js"() {
+  "node_modules/@opennextjs/aws/dist/adapters/logger.js"() {
     init_error();
     DOWNPLAYED_ERROR_LOGS = [
       {
@@ -119,9 +119,9 @@ var init_logger = __esm({
   }
 });
 
-// node_modules/@opennextjs/cloudflare/node_modules/cookie/dist/index.js
+// node_modules/@opennextjs/aws/node_modules/cookie/dist/index.js
 var require_dist = __commonJS({
-  "node_modules/@opennextjs/cloudflare/node_modules/cookie/dist/index.js"(exports) {
+  "node_modules/@opennextjs/aws/node_modules/cookie/dist/index.js"(exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.parseCookie = parseCookie;
@@ -368,7 +368,7 @@ var require_dist = __commonJS({
   }
 });
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/http/util.js
+// node_modules/@opennextjs/aws/dist/http/util.js
 function parseSetCookieHeader(cookies) {
   if (!cookies) {
     return [];
@@ -394,22 +394,22 @@ function getQueryFromIterator(it) {
   return query;
 }
 var init_util = __esm({
-  "node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/http/util.js"() {
+  "node_modules/@opennextjs/aws/dist/http/util.js"() {
     init_logger();
   }
 });
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/overrides/converters/utils.js
+// node_modules/@opennextjs/aws/dist/overrides/converters/utils.js
 function getQueryFromSearchParams(searchParams) {
   return getQueryFromIterator(searchParams.entries());
 }
 var init_utils = __esm({
-  "node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/overrides/converters/utils.js"() {
+  "node_modules/@opennextjs/aws/dist/overrides/converters/utils.js"() {
     init_util();
   }
 });
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/overrides/converters/edge.js
+// node_modules/@opennextjs/aws/dist/overrides/converters/edge.js
 var edge_exports = {};
 __export(edge_exports, {
   default: () => edge_default
@@ -417,7 +417,7 @@ __export(edge_exports, {
 import { Buffer as Buffer2 } from "node:buffer";
 var import_cookie, NULL_BODY_STATUSES, converter, edge_default;
 var init_edge = __esm({
-  "node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/overrides/converters/edge.js"() {
+  "node_modules/@opennextjs/aws/dist/overrides/converters/edge.js"() {
     import_cookie = __toESM(require_dist(), 1);
     init_util();
     init_utils();
@@ -499,14 +499,14 @@ var init_edge = __esm({
   }
 });
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/overrides/wrappers/cloudflare-edge.js
+// node_modules/@opennextjs/aws/dist/overrides/wrappers/cloudflare-edge.js
 var cloudflare_edge_exports = {};
 __export(cloudflare_edge_exports, {
   default: () => cloudflare_edge_default
 });
 var cfPropNameMapping, handler, cloudflare_edge_default;
 var init_cloudflare_edge = __esm({
-  "node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/overrides/wrappers/cloudflare-edge.js"() {
+  "node_modules/@opennextjs/aws/dist/overrides/wrappers/cloudflare-edge.js"() {
     cfPropNameMapping = {
       // The city name is percent-encoded.
       // See https://github.com/vercel/vercel/blob/4cb6143/packages/functions/src/headers.ts#L94C19-L94C37
@@ -547,7 +547,7 @@ var init_cloudflare_edge = __esm({
   }
 });
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/overrides/originResolver/pattern-env.js
+// node_modules/@opennextjs/aws/dist/overrides/originResolver/pattern-env.js
 var pattern_env_exports = {};
 __export(pattern_env_exports, {
   default: () => pattern_env_default
@@ -576,7 +576,7 @@ function initializeOnce() {
 }
 var cachedOrigins, cachedPatterns, initialized, envLoader, pattern_env_default;
 var init_pattern_env = __esm({
-  "node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/overrides/originResolver/pattern-env.js"() {
+  "node_modules/@opennextjs/aws/dist/overrides/originResolver/pattern-env.js"() {
     init_logger();
     cachedPatterns = [];
     initialized = false;
@@ -612,14 +612,14 @@ var init_pattern_env = __esm({
   }
 });
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/overrides/assetResolver/dummy.js
+// node_modules/@opennextjs/aws/dist/overrides/assetResolver/dummy.js
 var dummy_exports = {};
 __export(dummy_exports, {
   default: () => dummy_default
 });
 var resolver, dummy_default;
 var init_dummy = __esm({
-  "node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/overrides/assetResolver/dummy.js"() {
+  "node_modules/@opennextjs/aws/dist/overrides/assetResolver/dummy.js"() {
     resolver = {
       name: "dummy"
     };
@@ -627,7 +627,7 @@ var init_dummy = __esm({
   }
 });
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/utils/stream.js
+// node_modules/@opennextjs/aws/dist/utils/stream.js
 import { ReadableStream } from "node:stream/web";
 function toReadableStream(value, isBase64) {
   return new ReadableStream({
@@ -655,18 +655,18 @@ function emptyReadableStream() {
 }
 var maybeSomethingBuffer;
 var init_stream = __esm({
-  "node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/utils/stream.js"() {
+  "node_modules/@opennextjs/aws/dist/utils/stream.js"() {
   }
 });
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/overrides/proxyExternalRequest/fetch.js
+// node_modules/@opennextjs/aws/dist/overrides/proxyExternalRequest/fetch.js
 var fetch_exports = {};
 __export(fetch_exports, {
   default: () => fetch_default
 });
 var fetchProxy, fetch_default;
 var init_fetch = __esm({
-  "node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/overrides/proxyExternalRequest/fetch.js"() {
+  "node_modules/@opennextjs/aws/dist/overrides/proxyExternalRequest/fetch.js"() {
     init_stream();
     fetchProxy = {
       name: "fetch-proxy",
@@ -703,7 +703,7 @@ var init_fetch = __esm({
   }
 });
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/edgeFunctionHandler.js
+// node_modules/@opennextjs/aws/dist/core/edgeFunctionHandler.js
 var edgeFunctionHandler_exports = {};
 __export(edgeFunctionHandler_exports, {
   default: () => edgeFunctionHandler
@@ -738,14 +738,14 @@ async function edgeFunctionHandler(request) {
   return response;
 }
 var init_edgeFunctionHandler = __esm({
-  "node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/edgeFunctionHandler.js"() {
+  "node_modules/@opennextjs/aws/dist/core/edgeFunctionHandler.js"() {
     globalThis._ENTRIES = {};
     globalThis.self = globalThis;
     globalThis._ROUTES = [];
   }
 });
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/utils/cacheHeaders.js
+// node_modules/@opennextjs/aws/dist/utils/cacheHeaders.js
 var CACHE_CONTROL_HEADER = "cache-control";
 var OPEN_NEXT_CACHE_HEADER = "x-opennext-cache";
 var CACHE_TAGS_HEADER = "x-next-cache-tags";
@@ -761,10 +761,10 @@ function fixCacheControlForError(headers, statusCode) {
   }
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/utils/promise.js
+// node_modules/@opennextjs/aws/dist/utils/promise.js
 init_logger();
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/utils/requestCache.js
+// node_modules/@opennextjs/aws/dist/utils/requestCache.js
 var RequestCache = class {
   _caches = /* @__PURE__ */ new Map();
   /**
@@ -782,7 +782,7 @@ var RequestCache = class {
   }
 };
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/utils/promise.js
+// node_modules/@opennextjs/aws/dist/utils/promise.js
 var DetachedPromise = class {
   resolve;
   reject;
@@ -863,13 +863,13 @@ function runWithOpenNextRequestContext({ isISRRevalidation, waitUntil, requestId
   });
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/adapters/middleware.js
+// node_modules/@opennextjs/aws/dist/adapters/middleware.js
 init_logger();
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/createGenericHandler.js
+// node_modules/@opennextjs/aws/dist/core/createGenericHandler.js
 init_logger();
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/resolve.js
+// node_modules/@opennextjs/aws/dist/core/resolve.js
 async function resolveConverter(converter2) {
   if (typeof converter2 === "function") {
     return converter2();
@@ -906,7 +906,7 @@ async function resolveProxyRequest(proxyRequest) {
   return m_1.default;
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/createGenericHandler.js
+// node_modules/@opennextjs/aws/dist/core/createGenericHandler.js
 async function createGenericHandler(handler3) {
   const config = await import("./open-next.config.mjs").then((m) => m.default);
   globalThis.openNextConfig = config;
@@ -918,41 +918,41 @@ async function createGenericHandler(handler3) {
   return wrapper(handler3.handler, converter2);
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routing/util.js
+// node_modules/@opennextjs/aws/dist/core/routing/util.js
 import crypto from "node:crypto";
 import { parse as parseQs, stringify as stringifyQs } from "node:querystring";
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/adapters/config/index.js
+// node_modules/@opennextjs/aws/dist/adapters/config/index.js
 init_logger();
 import path from "node:path";
 globalThis.__dirname ??= "";
 var NEXT_DIR = path.join(__dirname, ".next");
 var OPEN_NEXT_DIR = path.join(__dirname, ".open-next");
 debug({ NEXT_DIR, OPEN_NEXT_DIR });
-var NextConfig = { "env": {}, "webpack": null, "eslint": { "ignoreDuringBuilds": false }, "typescript": { "ignoreBuildErrors": false, "tsconfigPath": "tsconfig.json" }, "typedRoutes": false, "distDir": ".next", "cleanDistDir": true, "assetPrefix": "", "cacheMaxMemorySize": 52428800, "configOrigin": "next.config.ts", "useFileSystemPublicRoutes": true, "generateEtags": true, "pageExtensions": ["tsx", "ts", "jsx", "js"], "poweredByHeader": false, "compress": true, "images": { "deviceSizes": [640, 768, 1024, 1280, 1536], "imageSizes": [16, 32, 48, 64, 96, 128, 256], "path": "/_next/image", "loader": "default", "loaderFile": "", "domains": [], "disableStaticImages": false, "minimumCacheTTL": 60, "formats": ["image/avif", "image/webp"], "dangerouslyAllowSVG": false, "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;", "contentDispositionType": "attachment", "remotePatterns": [], "unoptimized": false }, "devIndicators": { "position": "bottom-left" }, "onDemandEntries": { "maxInactiveAge": 6e4, "pagesBufferLength": 5 }, "amp": { "canonicalBase": "" }, "basePath": "", "sassOptions": {}, "trailingSlash": false, "i18n": null, "productionBrowserSourceMaps": false, "excludeDefaultMomentLocales": true, "serverRuntimeConfig": {}, "publicRuntimeConfig": {}, "reactProductionProfiling": false, "reactStrictMode": null, "reactMaxHeadersLength": 6e3, "httpAgentOptions": { "keepAlive": true }, "logging": {}, "compiler": {}, "expireTime": 31536e3, "staticPageGenerationTimeout": 60, "output": "standalone", "modularizeImports": { "@mui/icons-material": { "transform": "@mui/icons-material/{{member}}" }, "lodash": { "transform": "lodash/{{member}}" } }, "outputFileTracingRoot": "/home/asahel/Escritorio/Endovita-Technology", "experimental": { "useSkewCookie": false, "cacheLife": { "default": { "stale": 300, "revalidate": 900, "expire": 4294967294 }, "seconds": { "stale": 30, "revalidate": 1, "expire": 60 }, "minutes": { "stale": 300, "revalidate": 60, "expire": 3600 }, "hours": { "stale": 300, "revalidate": 3600, "expire": 86400 }, "days": { "stale": 300, "revalidate": 86400, "expire": 604800 }, "weeks": { "stale": 300, "revalidate": 604800, "expire": 2592e3 }, "max": { "stale": 300, "revalidate": 2592e3, "expire": 4294967294 } }, "cacheHandlers": {}, "cssChunking": true, "multiZoneDraftMode": false, "appNavFailHandling": false, "prerenderEarlyExit": true, "serverMinification": true, "serverSourceMaps": false, "linkNoTouchStart": false, "caseSensitiveRoutes": false, "clientSegmentCache": false, "clientParamParsing": false, "dynamicOnHover": false, "preloadEntriesOnStart": true, "clientRouterFilter": true, "clientRouterFilterRedirects": false, "fetchCacheKeyPrefix": "", "middlewarePrefetch": "flexible", "optimisticClientCache": true, "manualClientBasePath": false, "cpus": 15, "memoryBasedWorkersCount": false, "imgOptConcurrency": null, "imgOptTimeoutInSeconds": 7, "imgOptMaxInputPixels": 268402689, "imgOptSequentialRead": null, "imgOptSkipMetadata": null, "isrFlushToDisk": true, "workerThreads": false, "optimizeCss": false, "nextScriptWorkers": false, "scrollRestoration": false, "externalDir": false, "disableOptimizedLoading": false, "gzipSize": true, "craCompat": false, "esmExternals": true, "fullySpecified": false, "swcTraceProfiling": false, "forceSwcTransforms": false, "largePageDataBytes": 128e3, "typedEnv": false, "parallelServerCompiles": false, "parallelServerBuildTraces": false, "ppr": false, "authInterrupts": false, "webpackMemoryOptimizations": false, "optimizeServerReact": true, "viewTransition": false, "routerBFCache": false, "removeUncaughtErrorAndRejectionListeners": false, "validateRSCRequestHeaders": false, "staleTimes": { "dynamic": 0, "static": 300 }, "serverComponentsHmrCache": true, "staticGenerationMaxConcurrency": 8, "staticGenerationMinPagesPerWorker": 25, "cacheComponents": false, "inlineCss": false, "useCache": false, "globalNotFound": false, "devtoolSegmentExplorer": true, "browserDebugInfoInTerminal": false, "optimizeRouterScrolling": false, "serverActions": { "allowedOrigins": ["lasertech-demo.pages.dev", "localhost:3000"] }, "optimizePackageImports": ["lucide-react", "date-fns", "lodash-es", "ramda", "antd", "react-bootstrap", "ahooks", "@ant-design/icons", "@headlessui/react", "@headlessui-float/react", "@heroicons/react/20/solid", "@heroicons/react/24/solid", "@heroicons/react/24/outline", "@visx/visx", "@tremor/react", "rxjs", "@mui/material", "@mui/icons-material", "recharts", "react-use", "effect", "@effect/schema", "@effect/platform", "@effect/platform-node", "@effect/platform-browser", "@effect/platform-bun", "@effect/sql", "@effect/sql-mssql", "@effect/sql-mysql2", "@effect/sql-pg", "@effect/sql-sqlite-node", "@effect/sql-sqlite-bun", "@effect/sql-sqlite-wasm", "@effect/sql-sqlite-react-native", "@effect/rpc", "@effect/rpc-http", "@effect/typeclass", "@effect/experimental", "@effect/opentelemetry", "@material-ui/core", "@material-ui/icons", "@tabler/icons-react", "mui-core", "react-icons/ai", "react-icons/bi", "react-icons/bs", "react-icons/cg", "react-icons/ci", "react-icons/di", "react-icons/fa", "react-icons/fa6", "react-icons/fc", "react-icons/fi", "react-icons/gi", "react-icons/go", "react-icons/gr", "react-icons/hi", "react-icons/hi2", "react-icons/im", "react-icons/io", "react-icons/io5", "react-icons/lia", "react-icons/lib", "react-icons/lu", "react-icons/md", "react-icons/pi", "react-icons/ri", "react-icons/rx", "react-icons/si", "react-icons/sl", "react-icons/tb", "react-icons/tfi", "react-icons/ti", "react-icons/vsc", "react-icons/wi"], "trustHostHeader": false, "isExperimentalCompile": false }, "htmlLimitedBots": "[\\w-]+-Google|Google-[\\w-]+|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti|googleweblight", "bundlePagesRouterDependencies": false, "configFileName": "next.config.ts", "turbopack": { "root": "/home/asahel/Escritorio/Endovita-Technology" } };
-var BuildId = "Wxmw8yhF9VGkWM9CUzoNS";
+var NextConfig = { "env": {}, "webpack": null, "eslint": { "ignoreDuringBuilds": false }, "typescript": { "ignoreBuildErrors": false, "tsconfigPath": "tsconfig.json" }, "typedRoutes": false, "distDir": ".next", "cleanDistDir": true, "assetPrefix": "", "cacheMaxMemorySize": 52428800, "configOrigin": "next.config.ts", "useFileSystemPublicRoutes": true, "generateEtags": true, "pageExtensions": ["tsx", "ts", "jsx", "js"], "poweredByHeader": false, "compress": true, "images": { "deviceSizes": [640, 768, 1024, 1280, 1536], "imageSizes": [16, 32, 48, 64, 96, 128, 256], "path": "/_next/image", "loader": "default", "loaderFile": "", "domains": [], "disableStaticImages": false, "minimumCacheTTL": 60, "formats": ["image/avif", "image/webp"], "maximumResponseBody": 5e7, "dangerouslyAllowSVG": false, "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;", "contentDispositionType": "attachment", "remotePatterns": [], "unoptimized": false }, "devIndicators": { "position": "bottom-left" }, "onDemandEntries": { "maxInactiveAge": 6e4, "pagesBufferLength": 5 }, "amp": { "canonicalBase": "" }, "basePath": "", "sassOptions": {}, "trailingSlash": false, "i18n": null, "productionBrowserSourceMaps": false, "excludeDefaultMomentLocales": true, "serverRuntimeConfig": {}, "publicRuntimeConfig": {}, "reactProductionProfiling": false, "reactStrictMode": null, "reactMaxHeadersLength": 6e3, "httpAgentOptions": { "keepAlive": true }, "logging": {}, "compiler": {}, "expireTime": 31536e3, "staticPageGenerationTimeout": 60, "output": "standalone", "modularizeImports": { "@mui/icons-material": { "transform": "@mui/icons-material/{{member}}" }, "lodash": { "transform": "lodash/{{member}}" } }, "outputFileTracingRoot": "/home/asahel/Escritorio/Endovita-Technology", "experimental": { "useSkewCookie": false, "cacheLife": { "default": { "stale": 300, "revalidate": 900, "expire": 4294967294 }, "seconds": { "stale": 30, "revalidate": 1, "expire": 60 }, "minutes": { "stale": 300, "revalidate": 60, "expire": 3600 }, "hours": { "stale": 300, "revalidate": 3600, "expire": 86400 }, "days": { "stale": 300, "revalidate": 86400, "expire": 604800 }, "weeks": { "stale": 300, "revalidate": 604800, "expire": 2592e3 }, "max": { "stale": 300, "revalidate": 2592e3, "expire": 4294967294 } }, "cacheHandlers": {}, "cssChunking": true, "multiZoneDraftMode": false, "appNavFailHandling": false, "prerenderEarlyExit": true, "serverMinification": true, "serverSourceMaps": false, "linkNoTouchStart": false, "caseSensitiveRoutes": false, "clientSegmentCache": false, "clientParamParsing": false, "dynamicOnHover": false, "preloadEntriesOnStart": true, "clientRouterFilter": true, "clientRouterFilterRedirects": false, "fetchCacheKeyPrefix": "", "middlewarePrefetch": "flexible", "optimisticClientCache": true, "manualClientBasePath": false, "cpus": 15, "memoryBasedWorkersCount": false, "imgOptConcurrency": null, "imgOptTimeoutInSeconds": 7, "imgOptMaxInputPixels": 268402689, "imgOptSequentialRead": null, "isrFlushToDisk": true, "workerThreads": false, "optimizeCss": false, "nextScriptWorkers": false, "scrollRestoration": false, "externalDir": false, "disableOptimizedLoading": false, "gzipSize": true, "craCompat": false, "esmExternals": true, "fullySpecified": false, "swcTraceProfiling": false, "forceSwcTransforms": false, "largePageDataBytes": 128e3, "typedEnv": false, "parallelServerCompiles": false, "parallelServerBuildTraces": false, "ppr": false, "authInterrupts": false, "webpackMemoryOptimizations": false, "optimizeServerReact": true, "viewTransition": false, "routerBFCache": false, "removeUncaughtErrorAndRejectionListeners": false, "validateRSCRequestHeaders": false, "staleTimes": { "dynamic": 0, "static": 300 }, "serverComponentsHmrCache": true, "staticGenerationMaxConcurrency": 8, "staticGenerationMinPagesPerWorker": 25, "cacheComponents": false, "inlineCss": false, "useCache": false, "globalNotFound": false, "devtoolSegmentExplorer": true, "browserDebugInfoInTerminal": false, "optimizeRouterScrolling": false, "middlewareClientMaxBodySize": 10485760, "serverActions": { "allowedOrigins": ["techpro-demo.pages.dev", "localhost:3000"] }, "optimizePackageImports": ["lucide-react", "date-fns", "lodash-es", "ramda", "antd", "react-bootstrap", "ahooks", "@ant-design/icons", "@headlessui/react", "@headlessui-float/react", "@heroicons/react/20/solid", "@heroicons/react/24/solid", "@heroicons/react/24/outline", "@visx/visx", "@tremor/react", "rxjs", "@mui/material", "@mui/icons-material", "recharts", "react-use", "effect", "@effect/schema", "@effect/platform", "@effect/platform-node", "@effect/platform-browser", "@effect/platform-bun", "@effect/sql", "@effect/sql-mssql", "@effect/sql-mysql2", "@effect/sql-pg", "@effect/sql-sqlite-node", "@effect/sql-sqlite-bun", "@effect/sql-sqlite-wasm", "@effect/sql-sqlite-react-native", "@effect/rpc", "@effect/rpc-http", "@effect/typeclass", "@effect/experimental", "@effect/opentelemetry", "@material-ui/core", "@material-ui/icons", "@tabler/icons-react", "mui-core", "react-icons/ai", "react-icons/bi", "react-icons/bs", "react-icons/cg", "react-icons/ci", "react-icons/di", "react-icons/fa", "react-icons/fa6", "react-icons/fc", "react-icons/fi", "react-icons/gi", "react-icons/go", "react-icons/gr", "react-icons/hi", "react-icons/hi2", "react-icons/im", "react-icons/io", "react-icons/io5", "react-icons/lia", "react-icons/lib", "react-icons/lu", "react-icons/md", "react-icons/pi", "react-icons/ri", "react-icons/rx", "react-icons/si", "react-icons/sl", "react-icons/tb", "react-icons/tfi", "react-icons/ti", "react-icons/vsc", "react-icons/wi"], "trustHostHeader": false, "isExperimentalCompile": false }, "htmlLimitedBots": "[\\w-]+-Google|Google-[\\w-]+|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti|googleweblight", "bundlePagesRouterDependencies": false, "configFileName": "next.config.ts", "turbopack": { "root": "/home/asahel/Escritorio/Endovita-Technology" } };
+var BuildId = "vmzBtr3IpRbagDNtkGA07";
 var RoutesManifest = { "basePath": "", "rewrites": { "beforeFiles": [], "afterFiles": [], "fallback": [] }, "redirects": [{ "source": "/:path+/", "destination": "/:path+", "internal": true, "statusCode": 308, "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$" }], "routes": { "static": [{ "page": "/", "regex": "^/(?:/)?$", "routeKeys": {}, "namedRegex": "^/(?:/)?$" }, { "page": "/_not-found", "regex": "^/_not\\-found(?:/)?$", "routeKeys": {}, "namedRegex": "^/_not\\-found(?:/)?$" }, { "page": "/capacitaciones", "regex": "^/capacitaciones(?:/)?$", "routeKeys": {}, "namedRegex": "^/capacitaciones(?:/)?$" }, { "page": "/contacto", "regex": "^/contacto(?:/)?$", "routeKeys": {}, "namedRegex": "^/contacto(?:/)?$" }, { "page": "/equipos", "regex": "^/equipos(?:/)?$", "routeKeys": {}, "namedRegex": "^/equipos(?:/)?$" }, { "page": "/favicon.ico", "regex": "^/favicon\\.ico(?:/)?$", "routeKeys": {}, "namedRegex": "^/favicon\\.ico(?:/)?$" }, { "page": "/nosotros", "regex": "^/nosotros(?:/)?$", "routeKeys": {}, "namedRegex": "^/nosotros(?:/)?$" }, { "page": "/privacidad", "regex": "^/privacidad(?:/)?$", "routeKeys": {}, "namedRegex": "^/privacidad(?:/)?$" }, { "page": "/robots.txt", "regex": "^/robots\\.txt(?:/)?$", "routeKeys": {}, "namedRegex": "^/robots\\.txt(?:/)?$" }, { "page": "/servicio-tecnico", "regex": "^/servicio\\-tecnico(?:/)?$", "routeKeys": {}, "namedRegex": "^/servicio\\-tecnico(?:/)?$" }, { "page": "/sitemap.xml", "regex": "^/sitemap\\.xml(?:/)?$", "routeKeys": {}, "namedRegex": "^/sitemap\\.xml(?:/)?$" }, { "page": "/terminos", "regex": "^/terminos(?:/)?$", "routeKeys": {}, "namedRegex": "^/terminos(?:/)?$" }, { "page": "/testimonios", "regex": "^/testimonios(?:/)?$", "routeKeys": {}, "namedRegex": "^/testimonios(?:/)?$" }, { "page": "/thanks", "regex": "^/thanks(?:/)?$", "routeKeys": {}, "namedRegex": "^/thanks(?:/)?$" }], "dynamic": [{ "page": "/equipos/[slug]", "regex": "^/equipos/([^/]+?)(?:/)?$", "routeKeys": { "nxtPslug": "nxtPslug" }, "namedRegex": "^/equipos/(?<nxtPslug>[^/]+?)(?:/)?$" }], "data": { "static": [], "dynamic": [] } }, "locales": [] };
 var ConfigHeaders = [{ "source": "/(.*)", "headers": [{ "key": "X-Frame-Options", "value": "DENY" }, { "key": "X-Content-Type-Options", "value": "nosniff" }, { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }, { "key": "X-XSS-Protection", "value": "1; mode=block" }, { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }, { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://plausible.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://plausible.io" }], "regex": "^(?:/(.*))(?:/)?$" }];
-var PrerenderManifest = { "version": 4, "routes": { "/terminos": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/terminos", "dataRoute": "/terminos.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/favicon.ico": { "initialHeaders": { "cache-control": "public, max-age=0, must-revalidate", "content-type": "image/x-icon", "x-next-cache-tags": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico" }, "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/favicon.ico", "dataRoute": null, "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/servicio-tecnico": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/servicio-tecnico", "dataRoute": "/servicio-tecnico.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/_not-found": { "initialStatus": 404, "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/_not-found", "dataRoute": "/_not-found.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/robots.txt": { "initialHeaders": { "cache-control": "public, max-age=0, must-revalidate", "content-type": "text/plain", "x-next-cache-tags": "_N_T_/layout,_N_T_/robots.txt/layout,_N_T_/robots.txt/route,_N_T_/robots.txt" }, "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/robots.txt", "dataRoute": null, "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/thanks": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/thanks", "dataRoute": "/thanks.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/equipos/biostim-635": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/equipos/[slug]", "dataRoute": "/equipos/biostim-635.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/equipos/dual-pro": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/equipos/[slug]", "dataRoute": "/equipos/dual-pro.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/equipos/duo-810-980": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/equipos/[slug]", "dataRoute": "/equipos/duo-810-980.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/equipos/precision-3w": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/equipos/[slug]", "dataRoute": "/equipos/precision-3w.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/equipos/simpler-980": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/equipos/[slug]", "dataRoute": "/equipos/simpler-980.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/", "dataRoute": "/index.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/sitemap.xml": { "initialHeaders": { "cache-control": "public, max-age=0, must-revalidate", "content-type": "application/xml", "x-next-cache-tags": "_N_T_/layout,_N_T_/sitemap.xml/layout,_N_T_/sitemap.xml/route,_N_T_/sitemap.xml" }, "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/sitemap.xml", "dataRoute": null, "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/privacidad": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/privacidad", "dataRoute": "/privacidad.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/testimonios": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/testimonios", "dataRoute": "/testimonios.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/capacitaciones": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/capacitaciones", "dataRoute": "/capacitaciones.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/nosotros": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/nosotros", "dataRoute": "/nosotros.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] } }, "dynamicRoutes": { "/equipos/[slug]": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "routeRegex": "^/equipos/([^/]+?)(?:/)?$", "dataRoute": "/equipos/[slug].rsc", "fallback": null, "dataRouteRegex": "^/equipos/([^/]+?)\\.rsc$", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] } }, "notFoundRoutes": [], "preview": { "previewModeId": "f0cd3439bbd1f7470141d0c735454178", "previewModeSigningKey": "fa179655a77ab480da57348d4a3efcc71976e5108f57ef068e133337d1fa8c5e", "previewModeEncryptionKey": "cd341c7d5e21444c222abef790dd8b1eee0f569d2f4d838f67618e8953e3628a" } };
+var PrerenderManifest = { "version": 4, "routes": { "/servicio-tecnico": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/servicio-tecnico", "dataRoute": "/servicio-tecnico.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/favicon.ico": { "initialHeaders": { "cache-control": "public, max-age=0, must-revalidate", "content-type": "image/x-icon", "x-next-cache-tags": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico" }, "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/favicon.ico", "dataRoute": null, "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/testimonios": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/testimonios", "dataRoute": "/testimonios.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/robots.txt": { "initialHeaders": { "cache-control": "public, max-age=0, must-revalidate", "content-type": "text/plain", "x-next-cache-tags": "_N_T_/layout,_N_T_/robots.txt/layout,_N_T_/robots.txt/route,_N_T_/robots.txt" }, "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/robots.txt", "dataRoute": null, "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/thanks": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/thanks", "dataRoute": "/thanks.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/_not-found": { "initialStatus": 404, "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/_not-found", "dataRoute": "/_not-found.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/sitemap.xml": { "initialHeaders": { "cache-control": "public, max-age=0, must-revalidate", "content-type": "application/xml", "x-next-cache-tags": "_N_T_/layout,_N_T_/sitemap.xml/layout,_N_T_/sitemap.xml/route,_N_T_/sitemap.xml" }, "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/sitemap.xml", "dataRoute": null, "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/capacitaciones": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/capacitaciones", "dataRoute": "/capacitaciones.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/equipos/biostim-635": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/equipos/[slug]", "dataRoute": "/equipos/biostim-635.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/equipos/dual-pro": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/equipos/[slug]", "dataRoute": "/equipos/dual-pro.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/equipos/duo-810-980": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/equipos/[slug]", "dataRoute": "/equipos/duo-810-980.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/equipos/precision-3w": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/equipos/[slug]", "dataRoute": "/equipos/precision-3w.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/equipos/simpler-980": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/equipos/[slug]", "dataRoute": "/equipos/simpler-980.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/nosotros": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/nosotros", "dataRoute": "/nosotros.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/terminos": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/terminos", "dataRoute": "/terminos.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/privacidad": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/privacidad", "dataRoute": "/privacidad.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/", "dataRoute": "/index.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] } }, "dynamicRoutes": { "/equipos/[slug]": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "routeRegex": "^/equipos/([^/]+?)(?:/)?$", "dataRoute": "/equipos/[slug].rsc", "fallback": null, "dataRouteRegex": "^/equipos/([^/]+?)\\.rsc$", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] } }, "notFoundRoutes": [], "preview": { "previewModeId": "72ffb853bbe46f2762d6bd28829251bc", "previewModeSigningKey": "70b649f0325d86636c3c3a36786891ffe2862c74c0b32492ae62c8a6323f509a", "previewModeEncryptionKey": "229dc0a9837acf03b99b661682c18b121439c8b4aa82f93de611ee43194c0e39" } };
 var MiddlewareManifest = { "version": 3, "middleware": {}, "functions": {}, "sortedMiddleware": [] };
-var AppPathRoutesManifest = { "/_not-found/page": "/_not-found", "/api/contact/route": "/api/contact", "/api/support/route": "/api/support", "/favicon.ico/route": "/favicon.ico", "/robots.txt/route": "/robots.txt", "/sitemap.xml/route": "/sitemap.xml", "/page": "/", "/contacto/page": "/contacto", "/capacitaciones/page": "/capacitaciones", "/nosotros/page": "/nosotros", "/equipos/page": "/equipos", "/privacidad/page": "/privacidad", "/equipos/[slug]/page": "/equipos/[slug]", "/terminos/page": "/terminos", "/servicio-tecnico/page": "/servicio-tecnico", "/thanks/page": "/thanks", "/testimonios/page": "/testimonios" };
+var AppPathRoutesManifest = { "/_not-found/page": "/_not-found", "/api/contact/route": "/api/contact", "/api/support/route": "/api/support", "/favicon.ico/route": "/favicon.ico", "/robots.txt/route": "/robots.txt", "/sitemap.xml/route": "/sitemap.xml", "/page": "/", "/contacto/page": "/contacto", "/capacitaciones/page": "/capacitaciones", "/equipos/[slug]/page": "/equipos/[slug]", "/equipos/page": "/equipos", "/privacidad/page": "/privacidad", "/terminos/page": "/terminos", "/servicio-tecnico/page": "/servicio-tecnico", "/thanks/page": "/thanks", "/nosotros/page": "/nosotros", "/testimonios/page": "/testimonios" };
 var FunctionsConfigManifest = { "version": 1, "functions": {} };
 var PagesManifest = { "/_app": "pages/_app.js", "/_error": "pages/_error.js", "/_document": "pages/_document.js", "/404": "pages/404.html" };
 process.env.NEXT_BUILD_ID = BuildId;
 process.env.OPEN_NEXT_BUILD_ID = NextConfig.deploymentId ?? BuildId;
 process.env.NEXT_PREVIEW_MODE_ID = PrerenderManifest?.preview?.previewModeId;
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/http/openNextResponse.js
+// node_modules/@opennextjs/aws/dist/http/openNextResponse.js
 init_logger();
 import { Transform } from "node:stream";
 init_util();
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routing/util.js
+// node_modules/@opennextjs/aws/dist/core/routing/util.js
 init_util();
 init_logger();
 import { ReadableStream as ReadableStream2 } from "node:stream/web";
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/utils/binary.js
+// node_modules/@opennextjs/aws/dist/utils/binary.js
 var commonBinaryMimeTypes = /* @__PURE__ */ new Set([
   "application/octet-stream",
   // Docs
@@ -1020,11 +1020,11 @@ function isBinaryContentType(contentType) {
   return commonBinaryMimeTypes.has(value);
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routing/i18n/index.js
+// node_modules/@opennextjs/aws/dist/core/routing/i18n/index.js
 init_stream();
 init_logger();
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routing/i18n/accept-header.js
+// node_modules/@opennextjs/aws/dist/core/routing/i18n/accept-header.js
 function parse(raw, preferences, options) {
   const lowers = /* @__PURE__ */ new Map();
   const header = raw.replace(/[ \t]/g, "");
@@ -1124,7 +1124,7 @@ function acceptLanguage(header = "", preferences) {
   })[0] || void 0;
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routing/i18n/index.js
+// node_modules/@opennextjs/aws/dist/core/routing/i18n/index.js
 function isLocalizedPath(path3) {
   return NextConfig.i18n?.locales.includes(path3.split("/")[1].toLowerCase()) ?? false;
 }
@@ -1222,7 +1222,7 @@ function handleLocaleRedirect(internalEvent) {
   return false;
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routing/queue.js
+// node_modules/@opennextjs/aws/dist/core/routing/queue.js
 function generateShardId(rawPath, maxConcurrency, prefix) {
   let a = cyrb128(rawPath);
   let t = a += 1831565813;
@@ -1256,7 +1256,7 @@ function cyrb128(str) {
   return h1 >>> 0;
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routing/util.js
+// node_modules/@opennextjs/aws/dist/core/routing/util.js
 function isExternal(url, host) {
   if (!url)
     return false;
@@ -1366,17 +1366,17 @@ function normalizeLocationHeader(location, baseUrl, encodeQuery = false) {
   return href;
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routingHandler.js
+// node_modules/@opennextjs/aws/dist/core/routingHandler.js
 init_logger();
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routing/cacheInterceptor.js
+// node_modules/@opennextjs/aws/dist/core/routing/cacheInterceptor.js
 import { createHash } from "node:crypto";
 init_stream();
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/utils/cache.js
+// node_modules/@opennextjs/aws/dist/utils/cache.js
 init_logger();
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/utils/semver.js
+// node_modules/@opennextjs/aws/dist/utils/semver.js
 function compareSemver(v1, operator, v2) {
   let versionDiff = 0;
   if (v1 === "latest") {
@@ -1417,7 +1417,7 @@ function compareSemver(v1, operator, v2) {
   }
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/utils/cache.js
+// node_modules/@opennextjs/aws/dist/utils/cache.js
 async function isStale(key, tags, lastModified) {
   if (!compareSemver(globalThis.nextVersion, ">=", "16.0.0")) {
     return false;
@@ -1461,7 +1461,7 @@ function getTagsFromValue(value) {
   }
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routing/cacheInterceptor.js
+// node_modules/@opennextjs/aws/dist/core/routing/cacheInterceptor.js
 init_logger();
 var CACHE_ONE_YEAR = 60 * 60 * 24 * 365;
 var CACHE_ONE_MONTH = 60 * 60 * 24 * 30;
@@ -1692,7 +1692,7 @@ async function cacheInterceptor(event) {
   return event;
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/path-to-regexp/dist.es2015/index.js
+// node_modules/path-to-regexp/dist.es2015/index.js
 function lexer(str) {
   var tokens = [];
   var i = 0;
@@ -2068,18 +2068,18 @@ function pathToRegexp(path3, keys, options) {
   return stringToRegexp(path3, keys, options);
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/utils/normalize-path.js
+// node_modules/@opennextjs/aws/dist/utils/normalize-path.js
 import path2 from "node:path";
 function normalizeRepeatedSlashes(url) {
   const urlNoQuery = url.host + url.pathname;
   return `${url.protocol}//${urlNoQuery.replace(/\\/g, "/").replace(/\/\/+/g, "/")}${url.search}`;
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routing/matcher.js
+// node_modules/@opennextjs/aws/dist/core/routing/matcher.js
 init_stream();
 init_logger();
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routing/routeMatcher.js
+// node_modules/@opennextjs/aws/dist/core/routing/routeMatcher.js
 var optionalLocalePrefixRegex = `^/(?:${RoutesManifest.locales.map((locale) => `${locale}/?`).join("|")})?`;
 var optionalBasepathPrefixRegex = RoutesManifest.basePath ? `^${RoutesManifest.basePath}/?` : "^/";
 var optionalPrefix = optionalLocalePrefixRegex.replace("^/", optionalBasepathPrefixRegex);
@@ -2129,7 +2129,7 @@ function getStaticAPIRoutes() {
   return [...pagesStaticAPIRoutes, ...appPathsStaticAPIRoutes];
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routing/matcher.js
+// node_modules/@opennextjs/aws/dist/core/routing/matcher.js
 var routeHasMatcher = (headers, cookies, query) => (redirect) => {
   switch (redirect.type) {
     case "header":
@@ -2421,7 +2421,7 @@ function handleFallbackFalse(internalEvent, prerenderManifest) {
   };
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routing/middleware.js
+// node_modules/@opennextjs/aws/dist/core/routing/middleware.js
 init_stream();
 init_utils();
 var middlewareManifest = MiddlewareManifest;
@@ -2543,7 +2543,7 @@ async function handleMiddleware(internalEvent, initialSearch, middlewareLoader =
   };
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/core/routingHandler.js
+// node_modules/@opennextjs/aws/dist/core/routingHandler.js
 var MIDDLEWARE_HEADER_PREFIX = "x-middleware-response-";
 var MIDDLEWARE_HEADER_PREFIX_LEN = MIDDLEWARE_HEADER_PREFIX.length;
 var INTERNAL_HEADER_PREFIX = "x-opennext-";
@@ -2728,7 +2728,7 @@ function isInternalResult(eventOrResult) {
   return eventOrResult != null && "statusCode" in eventOrResult;
 }
 
-// node_modules/@opennextjs/cloudflare/node_modules/@opennextjs/aws/dist/adapters/middleware.js
+// node_modules/@opennextjs/aws/dist/adapters/middleware.js
 globalThis.internalFetch = fetch;
 globalThis.__openNextAls = new AsyncLocalStorage();
 var defaultHandler = async (internalEvent, options) => {

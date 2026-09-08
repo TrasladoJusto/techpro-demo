@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://techpro-demo.com/sitemap.xml

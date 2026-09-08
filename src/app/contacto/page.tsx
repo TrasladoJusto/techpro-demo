@@ -2,7 +2,6 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
 
-export const runtime = "edge";
 
 export const metadata: Metadata = {
   title: 'Contacto | TechPro',
@@ -13,12 +12,7 @@ export const metadata: Metadata = {
   },
 };
 
-interface PageProps {
-  searchParams: Promise<{ asunto?: string }>;
-}
-
-export default async function ContactoPage({ searchParams }: PageProps) {
-  const { asunto } = await searchParams;
+export default function ContactoPage() {
   return (
     <div className="bg-[var(--color-canvas)] overflow-x-hidden">
       {/* Background watermark numeral */}
@@ -99,7 +93,7 @@ export default async function ContactoPage({ searchParams }: PageProps) {
 
           {/* RIGHT — Minimalist Form */}
           <div className="col-span-12 md:col-span-5 md:sticky md:top-24 pt-8 md:pt-0">
-            <ContactForm defaultValue={asunto} />
+            <ContactForm />
 
             <div className="mt-24 pt-8 border-t border-[var(--color-rule)]">
               <p className="font-label text-[10px] leading-relaxed text-[var(--color-navy)]/40 max-w-xs">

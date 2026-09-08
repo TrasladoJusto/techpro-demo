@@ -1,7 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/terminos": {
+    "/servicio-tecnico": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,8 +14,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/terminos",
-      "dataRoute": "/terminos.rsc",
+      "srcRoute": "/servicio-tecnico",
+      "dataRoute": "/servicio-tecnico.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -54,7 +54,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/servicio-tecnico": {
+    "/testimonios": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -67,33 +67,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/servicio-tecnico",
-      "dataRoute": "/servicio-tecnico.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/_not-found": {
-      "initialStatus": 404,
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/_not-found",
-      "dataRoute": "/_not-found.rsc",
+      "srcRoute": "/testimonios",
+      "dataRoute": "/testimonios.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -147,6 +122,84 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/thanks",
       "dataRoute": "/thanks.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/_not-found": {
+      "initialStatus": 404,
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/_not-found",
+      "dataRoute": "/_not-found.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sitemap.xml": {
+      "initialHeaders": {
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-type": "application/xml",
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/sitemap.xml/layout,_N_T_/sitemap.xml/route,_N_T_/sitemap.xml"
+      },
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/sitemap.xml",
+      "dataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/capacitaciones": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/capacitaciones",
+      "dataRoute": "/capacitaciones.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -276,7 +329,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/": {
+    "/nosotros": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -289,8 +342,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
+      "srcRoute": "/nosotros",
+      "dataRoute": "/nosotros.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -300,12 +353,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/sitemap.xml": {
-      "initialHeaders": {
-        "cache-control": "public, max-age=0, must-revalidate",
-        "content-type": "application/xml",
-        "x-next-cache-tags": "_N_T_/layout,_N_T_/sitemap.xml/layout,_N_T_/sitemap.xml/route,_N_T_/sitemap.xml"
-      },
+    "/terminos": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -318,8 +366,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/sitemap.xml",
-      "dataRoute": null,
+      "srcRoute": "/terminos",
+      "dataRoute": "/terminos.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -353,7 +401,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/testimonios": {
+    "/": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -366,56 +414,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/testimonios",
-      "dataRoute": "/testimonios.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/capacitaciones": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/capacitaciones",
-      "dataRoute": "/capacitaciones.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/nosotros": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/nosotros",
-      "dataRoute": "/nosotros.rsc",
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -455,8 +455,8 @@
   },
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "f0cd3439bbd1f7470141d0c735454178",
-    "previewModeSigningKey": "fa179655a77ab480da57348d4a3efcc71976e5108f57ef068e133337d1fa8c5e",
-    "previewModeEncryptionKey": "cd341c7d5e21444c222abef790dd8b1eee0f569d2f4d838f67618e8953e3628a"
+    "previewModeId": "72ffb853bbe46f2762d6bd28829251bc",
+    "previewModeSigningKey": "70b649f0325d86636c3c3a36786891ffe2862c74c0b32492ae62c8a6323f509a",
+    "previewModeEncryptionKey": "229dc0a9837acf03b99b661682c18b121439c8b4aa82f93de611ee43194c0e39"
   }
 }

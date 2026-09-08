@@ -8,12 +8,12 @@
   "/page": "app/page.js",
   "/contacto/page": "app/contacto/page.js",
   "/capacitaciones/page": "app/capacitaciones/page.js",
-  "/nosotros/page": "app/nosotros/page.js",
+  "/equipos/[slug]/page": "app/equipos/[slug]/page.js",
   "/equipos/page": "app/equipos/page.js",
   "/privacidad/page": "app/privacidad/page.js",
-  "/equipos/[slug]/page": "app/equipos/[slug]/page.js",
   "/terminos/page": "app/terminos/page.js",
   "/servicio-tecnico/page": "app/servicio-tecnico/page.js",
   "/thanks/page": "app/thanks/page.js",
+  "/nosotros/page": "app/nosotros/page.js",
   "/testimonios/page": "app/testimonios/page.js"
 }

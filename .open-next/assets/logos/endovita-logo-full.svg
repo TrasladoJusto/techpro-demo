@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-label="Endovita Technology S.A.C">
-  <title>Endovita Technology S.A.C</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-label="TechPro Solutions S.A.C">
+  <title>TechPro Solutions S.A.C</title>
   <!-- Outer cyan ring -->
   <circle cx="240" cy="140" r="120" fill="none" stroke="#00A9E0" stroke-width="6"/>
   <!-- Inner cyan ring -->
@@ -37,6 +37,6 @@
   <!-- Central highlight -->
   <circle cx="240" cy="135" r="6" fill="#FFFFFF"/>
   <!-- Wordmark -->
-  <text x="240" y="280" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="800" font-size="44" letter-spacing="-0.02em" fill="#0B1620">ENDOVITA</text>
-  <text x="240" y="306" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-weight="600" font-size="15" letter-spacing="0.06em" fill="#00A9E0">TECHNOLOGY S.A.C</text>
+  <text x="240" y="280" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="800" font-size="44" letter-spacing="-0.02em" fill="#0B1620">TECHPRO</text>
+  <text x="240" y="306" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-weight="600" font-size="15" letter-spacing="0.06em" fill="#00A9E0">SOLUTIONS S.A.C</text>
 </svg>

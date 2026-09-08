@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { getAllProducts, getUniqueCategories } from '@/lib/data';
 import type { Metadata } from 'next';
 
-export const runtime = "edge";
 
 export const metadata: Metadata = {
   title: 'Catálogo de Equipos Láser | TechPro',
@@ -21,16 +20,8 @@ const categoryLabels: Record<string, string> = {
   terapia: 'Bioestimulación',
 };
 
-interface PageProps {
-  searchParams: Promise<{ categoria?: string }>;
-}
-
-export default async function EquiposPage({ searchParams }: PageProps) {
-  const { categoria } = await searchParams;
+export default function EquiposPage() {
   const allProducts = getAllProducts();
-  const products = categoria
-    ? allProducts.filter((p) => p.category === categoria)
-    : allProducts;
   const categories = getUniqueCategories();
 
   return (
@@ -98,23 +89,6 @@ export default async function EquiposPage({ searchParams }: PageProps) {
                 Curación por precisión milimétrica
               </p>
             </div>
-            <div className="flex gap-2 md:gap-4 flex-wrap">
-              <Link
-                href="/equipos"
-                className={`px-4 md:px-6 py-2 border border-[#0A2540]/10 text-[10px] uppercase tracking-widest font-medium hover:bg-[#0A2540] hover:text-white transition-all ${!categoria ? 'bg-[#0A2540] text-white' : ''}`}
-              >
-                Todos
-              </Link>
-              {categories.map((cat) => (
-                <Link
-                  key={cat}
-                  href={`/equipos?categoria=${cat}`}
-                  className={`px-4 md:px-6 py-2 border border-[#0A2540]/10 text-[10px] uppercase tracking-widest font-medium hover:bg-[#0A2540] hover:text-white transition-all ${categoria === cat ? 'bg-[#0A2540] text-white' : ''}`}
-                >
-                  {categoryLabels[cat] || cat}
-                </Link>
-              ))}
-            </div>
           </div>
           <div className="w-full overflow-x-auto">
             <table className="w-full text-left border-collapse">
@@ -136,7 +110,7 @@ export default async function EquiposPage({ searchParams }: PageProps) {
                 </tr>
               </thead>
               <tbody className="font-body text-sm">
-                {products.map((product) => (
+                {allProducts.map((product) => (
                   <tr
                     key={product.id}
                     className="group hover:bg-[#0A2540]/5 transition-colors"
